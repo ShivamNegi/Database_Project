@@ -1,7 +1,7 @@
 import re
 regex = re.compile(" (\d+)\n")
 data = []
-with open('result.txt') as f:
+with open('result1.txt') as f:
     for line in f:
         if "Request complete" in line:
             word = re.findall(regex, line)
